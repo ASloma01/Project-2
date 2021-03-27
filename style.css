@@ -1,0 +1,92 @@
+/* font-family: 'Barlow Semi Condensed', sans-serif; */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Barlow Semi Condensed', sans-serif;
+}
+body {
+    position: absolute;
+    width: 1440px;
+    height: 720px;
+    background-color: #EDF2F8;
+    font-size: 13px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.wrapper{
+    /* 360px */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "viol viol grayy whit" "whitee blackk blackk whit";
+}
+p{
+    opacity: 70%;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+h2{
+    padding-left: 60px;
+}
+div.name p {
+    padding-left: 60px;
+}
+div.name{
+    padding-bottom: 20px;
+    position: relative;
+}
+h1{
+    padding-bottom: 20px;
+}
+div.first{
+    position: relative;
+    z-index: 1;
+}
+svg{
+    position: absolute;
+    z-index: -1;
+    top:0%;
+    left: 70%;
+}
+img{
+    border: 1px solid violet;
+    position: absolute;
+    border-radius: 50%;
+}
+div.third img, div.second img, div.fifth img {
+    width:15%;
+}
+div.first img, div.fourth img {
+    width:7%
+}
+div.first, div.second, div.third, div.fourth, div.fifth {
+    margin: 10px;
+    border-radius: 20px;
+    padding: 40px;
+    line-height: 185%;
+}
+div.first{
+    grid-area: viol;
+    background-color:hsl(263, 55%, 52%) ;
+    color: white;
+}
+div.second{
+    grid-area: grayy;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+div.third{
+    grid-area: whitee;
+    background-color: hsl(0, 0%, 100%);
+}
+div.fourth{
+    grid-area: blackk;
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+div.fifth{
+    grid-area: whit;
+    background-color: hsl(0, 0%, 100%);
+}
